@@ -15,6 +15,9 @@ root.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+
+continue at 'Developer tools' header
+
 */
 class Square extends React.Component {
   constructor(props) {

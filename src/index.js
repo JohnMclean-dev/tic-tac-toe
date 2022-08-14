@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { toHaveFocus } from '@testing-library/jest-dom/dist/matchers';
 /*
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -108,7 +109,7 @@ class Game extends React.Component {
 
     const moves = history.map((step, move) => {
       const desc = move ?
-        'Go to moce #' + move :
+        'Go to move #' + move + ', last played move: ' :
         'Go to games start';
       return (
         <li key={move}>
